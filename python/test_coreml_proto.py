@@ -114,6 +114,7 @@ if __name__ == '__main__':
         model.ParseFromString(f.read())
     
     print(model.description)
+    print(model.specificationVersion)
     if model.HasField('neuralNetworkClassifier'):
         parseNeuralNetworkClassifier(model.neuralNetworkClassifier)
     
